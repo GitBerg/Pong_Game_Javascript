@@ -1,0 +1,39 @@
+.table{
+    background-color: rgb(255, 205, 205);
+    position: relative;
+    display: flex;
+    width: 700px;
+    height: 350px;
+}
+
+.table::before{
+    content: "";
+    position: absolute;
+    width: 720px;
+    height: 350px;
+    transform: translateX(-15px) translateY(-5px);
+    border: 5px solid #ff0606;
+}
+
+.table::after{
+    content: "";
+    position: absolute;
+    height: 350px;
+    width: 8px;
+    background-color: #ff0606;
+    transform: translateX(350px);
+}
+
+.score{
+    display: flex;
+    position: absolute;
+    font-family: Roboto;
+    font-size: 100px;
+    width: inherit;
+    height: inherit;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(255, 115, 115);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 10px;
+}
